@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5: Michael Gall</title>
+    <script src="js/script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        h1              {margin-bottom: 30px;}
+        label           {font-weight: bold;}
+        input, select   {margin-bottom: 10px;}
+        form            {width: 30%; padding: 20px;}
+        .submit_btn     {background:royalblue; color:white; font-weight:bolder; border-radius: 4px;}
+    </style>
+</head>
+<body class="m-4">
+    <h1>Employee Management System</h1>
+
+    <form id="empForm">     
+        <div>
+            <label for="id">8-Digit Employee ID</label><br>
+            <input type=""text" id="id" minlength="8" maxlength="8"><br>
+        </div>
+
+        <div>
+            <label for="emp_name">Name</label><br>
+            <input type=""text" id="emp_name"><br>
+        </div>
+
+        <div>
+            <label for="ext">4-Digit Extension</label><br>
+            <input type="text" id="ext" minlength="4" maxlength="4"><br>
+        </div>
+
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" autocomplete="email"><br>
+        </div>
+
+        <div>
+            <label for="department">Department</label><br>
+            <select id="department" name="department">
+                <option>Administrative</option>
+                <option>Engineering</option>
+                <option>Executive</option>
+                <option>Marketing</option>
+                <option>Quality Assurance</option>
+                <option>Sales</option>
+            </select><br><br>
+        </div>
+
+        <div>
+            <input type="submit" id="submit" value="Add Employee" class="submit_btn"><br>
+        </div>
+    </form>
+
+</body>
+</html>
